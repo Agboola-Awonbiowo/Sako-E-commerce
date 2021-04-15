@@ -6,6 +6,7 @@ export default function Search() {
         <>
           <Center>
            <Box position='absolute' top={{
+             base:'9%',
              sm:'9%',
              lg:'9%',
              xl:'8.3%'

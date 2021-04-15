@@ -34,7 +34,7 @@ export default function HomeScreen() {
 
         <Box d='flex' justifyContent='space-between' w='100%' overflow='hidden'>
             <Flex w='30%' justify='flex-end' d={{
-                sm:"none",
+                base:"none",
                 md: "none",
                 lg: "none",
                 xl: "flex"
@@ -43,7 +43,7 @@ export default function HomeScreen() {
             </Flex>
             
             <Center  p={10} m={{
-                sm:'0 auto',
+                base:'0 auto',
                 md:'0 auto',
             }}>
               
@@ -54,7 +54,7 @@ export default function HomeScreen() {
               </HStack>
 
             <Box d={{
-                sm:"block",
+                base:"block",
                 md: "block",
                 lg:"flex"
             }} >               

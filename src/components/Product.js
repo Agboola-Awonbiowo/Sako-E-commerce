@@ -15,12 +15,15 @@ export default function Product(props) {
         <>
           
               <Flex justify='space-between' w={{
-                sm:'100%',
+                base:'100%',
                 md: '100%',
                 lg: '600px'
               }} pb={5}>
               <Flex justify='space-between' >
-                 <Stack key={data.title} borderRadius="lg" mr={10}  p={5}>
+                 <Stack key={data.title} borderRadius="lg" mr={{
+                   base:'10px',
+                   md:'10'
+                 }}  p={5}>
                      <Box w='100px'>
                         <Box >
                         <Link to={`/Productdetails/${data._id}`}><Image src={data.image1}  alt='' /></Link>

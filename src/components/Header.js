@@ -24,7 +24,7 @@ const Header = (props) => {
         <HStack bg="blue.500" p={3.5} >
         <Box>
         <IconButton display={{
-                sm:'block',
+                base:'block',
                 xl:'none'
             }} onClick={onOpen}  as={FaBars} bg='blue.500'/>
         </Box>
@@ -37,11 +37,11 @@ const Header = (props) => {
 
         <Flex height='118px' justify='space-between' align='center' bg="#fff">
             <Box w={{
-                sm:'60%',
+                base:'60%',
                 md:'60%',
                 lg:'35%'
             }} m={{
-                sm:'3%',
+                base:'3%',
                 md:'5%',
                 lg:'auto'
             }} >
@@ -52,14 +52,14 @@ const Header = (props) => {
                 </Circle>
                <Box>
                <Heading px={3} fontSize={{
-                   sm:"sm",
+                   base:"sm",
                    md:"22px"
                }} pb={2} >
                     Target
                 </Heading>
                 
                 <Text px={4} fontSize={{
-                    sm:"10px",
+                    base:"10px",
                     md:"14px",
                     lg:"16px"
                 }}>
@@ -78,16 +78,16 @@ const Header = (props) => {
                 <Badge position='relative' right={2} bottom={1} mb={2} bg='red' rounded='full' >{props.item.cart.length}</Badge>
                 
                 <Text position='relative' right={2} fontSize={{
-                    sm:"xs",
+                    base:"xs",
                     md:"14px",
                     lg:"16px"
                 }}>Bag</Text>
                 </HStack></Link>
                    
                 <Stack isInline>
-                   <Icon as={BiUser} fontSize='20px' color="#333" />
+                   <Icon as={BiUser} fontSize={{base:'16px'}} color="#333" />
                 <Box fontSize={{
-                    sm:"xs",
+                    base:"xs",
                     md:"14px",
                     lg:"16px"
                 }}>Account</Box>
@@ -98,6 +98,7 @@ const Header = (props) => {
           <Divider orientation="horizontal" />
 
           <Flex d={{
+                  base:'none',
                   xl:'none'
               }} >
               <Side isDrawerOpen={isOpen} closeDrawer={onClose} />

@@ -25,7 +25,7 @@ const ProductdetailsScreen = (props) => {
               <Stack  mb={10}>
                 
                         <Box w='80%'  d={{
-                            sm:'block',
+                            base:'block',
                             md:'flex'
                         }} m='0 auto' overflow='hidden' h='100%'>
                     <Carousel autoPlay showArrows={false} heigh='300px' showThumbs={false} interval={5000} transitionTime={2000} width='400px' >
@@ -41,11 +41,10 @@ const ProductdetailsScreen = (props) => {
                     </Carousel>
 
                             <Box w={{
-                                sm:'100%',
+                                base:'100%',
                                 md:'600px'
                             }} p={10} mt={{
-                                xs:'0',
-                                sm:'0',
+                                base:'0',
                                 md:'30'
                             }} textAlign={{
                                 sm:'center'
@@ -69,9 +68,9 @@ const ProductdetailsScreen = (props) => {
                                  </Box>   
 
                                  <Stack isInline align='baseline' d={{
-                                     sm:'flex'
+                                     base:'flex'
                                  }} mb={10} justify={{
-                                     sm:'center'
+                                     base:'center'
                                  }}>
                                     <IconButton onClick={()=>{
                         props.decreaseItem(detailsProduct._id);
@@ -96,7 +95,7 @@ const ProductdetailsScreen = (props) => {
                         
                      
                             <Box textAlign={{
-                                sm:'center',
+                                base:'center',
                                 md:'center',
                                 lg:'start'                            
                                 }} pl={{
@@ -107,14 +106,14 @@ const ProductdetailsScreen = (props) => {
                              <br />
                             
                         <Stack direction={["column", "row"]} spacing="73px" pl={2} pb={10}  overflow='hidden' d={{
-                            sm:'flex',
+                            base:'flex',
                             md:'flex',
                             lg:'flex'
                         }} direction={{
-                        sm:'column',
+                        base:'column',
                         md:'column',
                         lg:'row',
-                }} align={{sm:'center'}} justify={{
+                }} align={{base:'center'}} justify={{
                             lg:'center'
                         }} >
                             <Box w="150px" h="150px" >

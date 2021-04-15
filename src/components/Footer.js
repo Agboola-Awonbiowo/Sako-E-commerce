@@ -7,10 +7,10 @@ export default function Footer() {
     return (
         <>
            <Stack>
-               <Box d='flex' align='center' justifyContent='center' bg="blue.500" height={200}>
+               <Box d='flex' align='center' justifyContent='center' bg="blue.500" height={200} w='100%'>
                     <Flex align='center'>
                         <Box  mr={{
-                            sm:'20',
+                            base:'10',
                             md:'40',
                             lg:'40'
                         }} mt={5}>
@@ -19,7 +19,7 @@ export default function Footer() {
                             
                         </Box>
                         <Text p={2} color='#fff' fontSize={{
-                    sm:"xs",
+                    base:"xs",
                     md:"14px",
                     lg:"16px"
                 }}>Fast Delivery</Text>
@@ -29,13 +29,13 @@ export default function Footer() {
                             <Image src='https://d3hbe0kmbam4a5.cloudfront.net/assets/static/media/gold-badge.f83d7aec.svg' alt='' />
                         </Box>
                         <Text  color='#fff' fontSize={{
-                    sm:"xs",
+                    base:"xs",
                     md:"14px",
                     lg:"16px"
                 }}>Buyer Protection</Text>
                         </Box>
                         <Box ml={{
-                            sm:'20',
+                            base:'10',
                             md:'40',
                             lg:'40'
                         }}>
@@ -44,7 +44,7 @@ export default function Footer() {
                             
                         </Box>
                         <Text  color='#fff'fontSize={{
-                    sm:"xs",
+                    base:"xs",
                     md:"14px",
                     lg:"16px"
                 }}>Custormer Support</Text>
@@ -54,22 +54,22 @@ export default function Footer() {
                 <Flex justify='center' bg="white" align='center' height={200}>
                     <Box textAlign='center'>
                         <Text pb={3} fontSize={{
-                    sm:"xs",
+                    base:"xs",
                     md:"16px",
                     lg:"16px"
                 }}>STORE DETAILS</Text>
                         <Text pb={3} fontSize={{
-                    sm:"xs",
+                    base:"xs",
                     md:"16px",
                     lg:"16px"
                 }}>Target</Text>
                         <Text pb={3} fontSize={{
-                    sm:"xs",
+                    base:"xs",
                     md:"16px",
                     lg:"16px"
                 }}>Cham Towers, Plot 12 Nkruma Rd, Kampala, Ug</Text>
                         <Button leftIcon={<ImWhatsapp />} bg='#25D366' color='white' variant="solid" fontSize={{
-                    sm:"xs",
+                    base:"xs",
                     md:"16px",
                     lg:"16px"
                 }}>

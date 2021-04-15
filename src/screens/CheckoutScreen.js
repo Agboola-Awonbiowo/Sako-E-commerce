@@ -14,7 +14,7 @@ const CheckoutScreen = (props) => {
                 cart.length > 0 && (
                     <Flex justify='space-between'>
                     <Box w='50%'  d={{
-                        sm:'none',
+                        base:'none',
                         md:'none',
                         lg:'block'
                     }}>
@@ -42,7 +42,7 @@ const CheckoutScreen = (props) => {
                      </Box>
                     </Box>
                     <Box w={{
-                        sm:'100%',
+                        base:'100%',
                         md: '80%',
                         lg: '40%'
                     }} m={{
