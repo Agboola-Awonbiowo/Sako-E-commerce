@@ -1,16 +1,24 @@
-import {GET_ITEMS,  ADD_ITEMS, DELETE_ITEM, BANNER_CLOSE, INCREASE_ITEM, DECREASE_ITEM, 
-    TOTAL_ITEMS, DETAILS, CLEAR_CART} from '../constants/types'
+import {
+  GET_ITEMS,
+  ADD_ITEMS,
+  DELETE_ITEM,
+  BANNER_CLOSE,
+  INCREASE_ITEM,
+  DECREASE_ITEM,
+  TOTAL_ITEMS,
+  DETAILS,
+  CLEAR_CART,
+} from "../constants/types";
 
-    // for getting the initial showing items
-export const getItems=()=>{
-    return{
-        type:GET_ITEMS
-    }
-}
+// for getting the initial showing items
+export const getItems = () => {
+  return {
+    type: GET_ITEMS,
+  };
+};
 
 // for appearing dissapearing navbar
 // export const toggleNav =()=>dispatch=>{
-  
 
 //     dispatch({
 //         type:TOGGLE_NAV
@@ -20,7 +28,6 @@ export const getItems=()=>{
 // for closing navbar if it is open
 // export const closeNavbar = ()=>dispatch=>{
 
-  
 //     dispatch({
 //         type:CLOSE_NAVBAR
 //     })
@@ -28,93 +35,68 @@ export const getItems=()=>{
 // }
 
 // for adding item to cart
-export const AddToCart =(id)=>dispatch=>{
-
- dispatch({
-     type:ADD_ITEMS,
-     payload:id
-    
- })
-
-
-}
+export const AddToCart = (id) => (dispatch) => {
+  dispatch({
+    type: ADD_ITEMS,
+    payload: id,
+  });
+};
 
 // for closing the banner
 
-export const bannerClose =()=>dispatch=>{
-
-    dispatch({
-        type:BANNER_CLOSE,
-    
-    })
-   
-   }
-
+export const bannerClose = () => (dispatch) => {
+  dispatch({
+    type: BANNER_CLOSE,
+  });
+};
 
 //    for deleting the items from the cart
 
-export const deleteItem =(id)=>dispatch=>{
+export const deleteItem = (id) => (dispatch) => {
+  dispatch({
+    type: DELETE_ITEM,
+    payload: id,
+  });
+};
 
-    dispatch({
-        type:DELETE_ITEM,
-        payload:id
-    
-    })
-   
-   }
+//    for increasing item inside cart
 
+export const increaseItem = (id) => (dispatch) => {
+  console.log(`increase :${id}`);
+  dispatch({
+    type: INCREASE_ITEM,
+    payload: id,
+  });
+};
 
-   //    for increasing item inside cart
+//    for increasing item inside cart
 
-export const increaseItem =(id)=>dispatch=>{
+export const decreaseItem = (id) => (dispatch) => {
+  console.log(`DECREASE :${id}`);
+  dispatch({
+    type: DECREASE_ITEM,
+    payload: id,
+  });
+};
 
-    console.log(`increase :${id}`);
-    dispatch({
-        type:INCREASE_ITEM,
-        payload:id
-    
-    })
-   
-   }
+//  for getting the total price of items inside the cart
 
-
-      //    for increasing item inside cart
-
-export const decreaseItem =(id)=>dispatch=>{
-
-    console.log(`DECREASE :${id}`);
-    dispatch({
-        type:DECREASE_ITEM,
-        payload:id
-    
-    })
-   
-   }
-
-         //  for getting the total price of items inside the cart
-
-export const getTotals =()=>dispatch=>{
-
-    dispatch({
-        type:TOTAL_ITEMS,
-      
-    })
-   
-   }
+export const getTotals = () => (dispatch) => {
+  dispatch({
+    type: TOTAL_ITEMS,
+  });
+};
 
 //    get details
 
-export const clearCart = () => dispatch => {
-    dispatch({
-        type:CLEAR_CART
-    })
-}
+export const clearCart = () => (dispatch) => {
+  dispatch({
+    type: CLEAR_CART,
+  });
+};
 
-export const getDetails =()=>dispatch=>{
-
-    dispatch({
-        type:DETAILS,
-      
-    })
-   
-   }
+export const getDetails = () => (dispatch) => {
+  dispatch({
+    type: DETAILS,
+  });
+};
